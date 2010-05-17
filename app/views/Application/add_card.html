@@ -1,0 +1,7 @@
+#{extends 'main.html'}
+#{set title:'Ajouter une carte'}
+
+        <form action="/Card/add" method="POST">
+            <label>Avant: <input type="text" name="c.front" /></label>
+            <label>Arrière: <input type="text" name="c.back" /></label>
+        </form>

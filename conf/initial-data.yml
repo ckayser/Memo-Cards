@@ -1,0 +1,39 @@
+Card(ni):
+    front: ni
+    back: tu, toi
+
+Card(yi):
+    front: yi
+    back: un
+
+Card(er):
+    front: er
+    back: deux
+
+Card(san):
+    front: san
+    back: trois
+
+Card(si):
+    front: si
+    back: quatre
+
+Card(wo):
+    front: wo
+    back: cinq
+
+Card(liu):
+    front: liu
+    back: six
+
+Card(qi):
+    front: qi
+    back: sept
+
+Card(ba):
+    front: ba
+    back: huit
+
+Card(jiu):
+    front: jiu
+    back: neuf

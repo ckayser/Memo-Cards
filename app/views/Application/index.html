@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>PlayCards</h1>
+<div class="cards">
+    #{list items:cards, as:'card'}
+    <div>
+        ${card.front}
+        <hr/>
+        ${card.back}
+    </div>
+    #{/list}
+</div>

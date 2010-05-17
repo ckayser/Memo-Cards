@@ -1,0 +1,15 @@
+.cards > div {
+    width:100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align:center;
+    display:inline-block;
+}
+hr {
+    border: 0;
+    background-color: #ccc;
+    height: 1px;
+}

@@ -1,0 +1,8 @@
+16 mai 2010 11:37:53,483 INFO  ~ Starting c:\dev\sources\memocards
+16 mai 2010 11:37:54,428 INFO  ~ 
+16 mai 2010 11:37:54,429 INFO  ~ Go to http://localhost:9000/@tests to run the tests
+16 mai 2010 11:37:54,429 INFO  ~ 
+16 mai 2010 11:37:54,430 WARN  ~ You're running Play! in DEV mode
+16 mai 2010 11:37:54,636 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+16 mai 2010 11:38:11,135 INFO  ~ Connected to jdbc:hsqldb:mem:playembed
+16 mai 2010 11:38:12,647 INFO  ~ Application 'MemoCards' is now started !
