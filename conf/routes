@@ -8,5 +8,8 @@ GET     /                                       Application.index
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
+GET	/new					Application.addCard
+POST	/new					Application.add
+
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}

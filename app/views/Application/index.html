@@ -5,9 +5,10 @@
 <div class="cards">
     #{list items:cards, as:'card'}
     <div>
-        ${card.front}
+        ${card.front} [<a href="@{Application.delete(card.id)}">delete</a>]
         <hr/>
         ${card.back}
     </div>
     #{/list}
 </div>
+<a href="@{Application.add()}">Ajouter une carte</a>

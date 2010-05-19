@@ -13,3 +13,8 @@ hr {
     background-color: #ccc;
     height: 1px;
 }
+
+.error {
+    color: red;
+    font-weight: bold;
+}
