@@ -1,9 +1,8 @@
 package controllers;
 
 import models.Card;
-import play.cache.Cache;
-import play.db.jpa.JPASupport;
-import play.mvc.*;
+import play.data.validation.Valid;
+import play.mvc.Controller;
 
 import java.util.List;
 import java.util.Random;
@@ -35,12 +34,24 @@ public class Application extends Controller {
         renderText(card.getAnswer());
     }
 
-    public static void add(Card c) {
-        c.save();
+    public static void add(@Valid Card c) {
+    	if (validation.hasErrors()) {
+    		params.flash();
+    		validation.keep();
+    		addCard();
+    	} else {
+    		c.save();
+    		index();
+    	}
+    }
+    
+    public static void addCard() {
+    	render();
     }
 
-    public static void list() {
-
+    public static void delete(Long id) {
+    	Card.findById(id).delete();
+    	index();
     }
 
 }

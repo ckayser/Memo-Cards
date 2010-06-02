@@ -1,5 +1,6 @@
 package models;
 
+import play.data.validation.Required;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
@@ -7,7 +8,9 @@ import javax.persistence.Transient;
 
 @Entity
 public class Card extends Model {
+	@Required
     public String front;
+	@Required
     public String back;
 
     public static Card newCard(String front, String back) {

@@ -1,0 +1,5 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+validation.required = Ce champ est obligatoire.
+there.are.errors = Oups, il y a des erreurs à corriger !

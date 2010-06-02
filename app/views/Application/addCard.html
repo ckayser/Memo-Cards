@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+#{set title:'Ajouter une carte' /}
+
+#{ifErrors}
+	<h2>&{'there.are.errors'}</h2>
+#{/ifErrors}
+        <form action="/new" method="POST">
+            <label for="front">Avant:</label> <input type="text" id="front" name="c.front" value="${flash['c.front']}"/>
+       	    <span class="error">#{error 'c.front'/}</span><br/>
+            <label for="back">Arri&egrave;re:</label> <input type="text" id="back" name="c.back" value="${flash['c.back']}"/>
+       	    <span class="error">#{error 'c.back'/}</span><br/>
+            <input type="submit" value="Valider"/>
+        </form>
