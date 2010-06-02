@@ -3,7 +3,8 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
+GET     /	                                    Application.index
+GET     /getAnswer                              Application.getAnswer
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public

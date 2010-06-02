@@ -1,13 +1,18 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Play cards' /}
+<script type="text/javascript">
+
+    var cards = #{jsAction @cards() /}
+    function getCards() {
+        $('#cards').load(cards())
+    }
+
+</script>
 
 <h1>PlayCards</h1>
-<div class="cards">
-    #{list items:cards, as:'card'}
-    <div>
-        ${card.front}
-        <hr/>
-        ${card.back}
-    </div>
-    #{/list}
+
+<center><input type="button" onclick="getCards()" value="Jouer" /></center>
+
+<div id="cards">
+	#{include 'Application/cards.html' /}
 </div>

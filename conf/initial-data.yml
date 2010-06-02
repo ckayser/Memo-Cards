@@ -1,39 +1,49 @@
 Card(ni):
-    front: ni
+    front: 你
     back: tu, toi
+    turnedOver: false
 
 Card(yi):
-    front: yi
+    front: 一
     back: un
+    turnedOver: true
 
 Card(er):
-    front: er
+    front: 二
     back: deux
+    turnedOver: false
 
 Card(san):
-    front: san
+    front: 三 
     back: trois
+    turnedOver: false
 
 Card(si):
-    front: si
+    front: 四
     back: quatre
+    turnedOver: false
 
 Card(wo):
-    front: wo
+    front: 五
     back: cinq
+    turnedOver: false
 
 Card(liu):
-    front: liu
+    front: 六
     back: six
+    turnedOver: false
 
 Card(qi):
-    front: qi
+    front: 七
     back: sept
+    turnedOver: false
 
 Card(ba):
-    front: ba
+    front: 八
     back: huit
+    turnedOver: false
 
 Card(jiu):
-    front: jiu
+    front: 九
     back: neuf
+    turnedOver: false
